@@ -37,7 +37,7 @@
 <style>
 
     nav {
-            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05) !important;
+            /* box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05) !important; */
             /* box-shadow: 0 7px 2px rgba(0,0,0,0.1); */
             font-family: 'Poppins', sans-serif;
             color: #1d2f6f;
@@ -772,6 +772,8 @@ p{
         font-size: 6px;
     }
 }
+
+/* --------------------------------------------------------------------------------------------------- */
 .i_main_container{
     background-color:#F3F7FF;
     width:100% !important;
@@ -780,6 +782,182 @@ p{
 
 #mySidenav{
     margin-top:0px;
+}
+.i_nav_main{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+.intern_main{
+    margin-top:20px;
+}
+.navm{
+    /* border-style: solid; */
+    width: 30%; 
+    display: inline-block;
+}
+.navm p{
+    font-size: 28px;
+    font-weight: 600;
+}
+@media  screen and (max-width: 1092px){
+    .navm p{
+        font-size: 24px;
+    }
+    .nav-tick img{
+        width:50px;
+    }
+    .nav-men img{
+        width:30px;
+    }
+    .nav-bell img{
+        width:25px;
+    }
+    .nav-tick{
+        margin-right: -15px;
+    }
+    .nav-bell{
+        margin: 0 -10px;
+    }
+}
+@media  screen and (max-width: 948px){
+    .navm p{
+        font-size: 22px;
+    }
+}
+@media  screen and (max-width: 864px){
+    .navm p{
+        font-size: 20px;
+    }
+    .nav-tick img{
+        width:40px;
+    }
+    .nav-men img{
+        width:25px;
+    }
+    .nav-bell img{
+        width:20px;
+    }
+    .nav-logout img {
+        width: 35px;
+        height:auto;
+        margin-right: -15px;
+    }
+    .nav-tick{
+        margin-right: -20px;
+    }
+    .nav-bell{
+        margin: 0 -15px;
+    }
+}
+@media  screen and (max-width: 864px){
+    .navm p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 577px){
+    .navm{
+        margin-left: 3%;
+    }
+    
+}
+@media  screen and (max-width: 578px){
+    .navl{
+        width:35%;
+    }
+    .nav-tick{
+        margin-right: 0px;
+    }
+    .nav-bell{
+        margin: 0px;
+    }
+    .nav-men{
+        margin-left: -28px;
+        margin-right: -10px;
+    }
+    .nav-logout img {
+        width: 30px;
+        height:auto;
+        margin-left: 300%;  
+    }
+    
+}
+@media  screen and (max-width: 526px){
+    .nav-tick , .nav-men , .nav-bell{
+        /* border-style: solid; */
+    }
+    .nav-tick a, .nav-men a, .nav-bell a{
+        padding: 0px;
+    }
+    .nav-tick{
+        width: 30%;
+    }
+    .nav-men{
+        margin-left: 7px;
+        margin-right: 2px;
+    }
+    .navm p{
+        font-size: 18px;
+    }
+}
+@media  screen and (max-width: 486px){
+    .nav-tick img{
+        width:30px;
+    }
+    .nav-men img{
+        width:20px;
+    }
+    .nav-bell img{
+        width:15px;
+    }
+    .nav-logout img {
+        width: 25px;
+        height:auto;
+        margin-left: 200%;  
+    }
+}
+@media  screen and (max-width: 441px){
+    .nav-tick img{
+        width:25px;
+    }
+    .nav-men img{
+        width:15px;
+    }
+    .nav-bell img{
+        width:10px;
+    }
+    .nav-logout img {
+        width: 20px;
+        height:auto;
+        margin-left: 200%;  
+    }
+    .navm p{
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width: 399px){
+    .navl{
+        margin-left: 0px;
+    }
+    .nav-men{
+        margin-left: -5px;
+    }
+    .navm p{
+        font-size: 14px;
+    }
+    .nav-logout img {
+        margin-left: 400%;  
+    }
+}
+@media  screen and (max-width: 319px){
+    .navm p{
+        font-size: 12px;
+    }
+    .nav-men{
+        margin-left: -3px;
+    }
+    .nav-bell{
+        margin-left:-5px;
+    }
 }
 /* .i_pro{
     font-size:26px;
@@ -908,6 +1086,7 @@ p{
             
 
         </navbar> -->
+        <div class="i_nav_main">
         <nav style="background-color: #F3F7FF">
             <div class="nbar" style="background-color: #F3F7FF">
                 <div class="navl" >
@@ -977,13 +1156,16 @@ p{
         
                     <!-- <div class="nav-bell"><img src="bell.png"/></div> -->
                 </div>
-                <div class="navr">
+                <div class="navm">
+                    <p>Intern Profile</p>
+                </div>
+                <div class="navr" >
                     
-                    <div class="nav-logout"><a href="#"><img style="margin-top:10px;"src="logout.png" /></a></div>
+                    <div class="nav-logout"><a href="#"><img src="logout.png" /></a></div>
             </div>
             </div>
         </nav>
-
+    </div>
 
 
     <form>
